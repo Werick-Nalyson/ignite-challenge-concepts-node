@@ -187,6 +187,8 @@ describe('Todos', () => {
       .get('/todos')
       .set('username', userResponse.body.username);
 
+      console.log(listResponse.body)
+
     expect(listResponse.body).toEqual([]);
   });
 
